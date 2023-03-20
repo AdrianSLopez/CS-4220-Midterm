@@ -2,7 +2,7 @@
 # Midterm Project
 DUE: Sunday 03/26/23 - 11:59PM
 
-
+----
 
 Create a Command Line Application to demonstrate your understanding of JavaScript, Node.js by building a CLIs that interacts with an API.
 
@@ -19,7 +19,9 @@ Build a Command Line Application which accept a user's input of a **keyword or s
 
 Your app should then go back to the API again and perform a get/fetch by some unique identifier to be able to **display more details about the item selected** and then those details **should be displayed on the console** for the user to view. 
 
-The application should save all keyword or search term to a local JSON file and the result count for that keyword or search term.
+The application should save all **keyword or search term** to a local JSON file and the result count for that **keyword or search term**.
+
+----
 
 ## CLI Project Requirements
 
@@ -40,12 +42,10 @@ Create a Command Line Application similar to the examples in class.  The Command
 
  
 **api.js**
-
     - This file **_must_** export a function that allows for searching the selected API by keyword.
-        Given a search keyword or search term this function should **return an array that represents the result list** which is related to the search term.
-
+        - Given a search keyword or search term this function should **return an array that represents the result list** which is related to the search term.
     - This file **_must_** export a function for getting details from the selected API by some unique identifier (id).
-        Given an id or some unique identifier, this function should **return detailed data about that one item.**
+        - Given an id or some unique identifier, this function should **return detailed data about that one item.**
 
 
 **app.js**
@@ -68,6 +68,3 @@ Create a Command Line Application similar to the examples in class.  The Command
     - This performs the save by writing/updating a JSON file locally
     - The saved dated should be in the form of an array of objects - where each object has the key search and the key resultCount
     - HINT: https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback 
-
-    Links to an external site.
-
