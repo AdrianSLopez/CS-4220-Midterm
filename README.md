@@ -8,11 +8,13 @@ Create a Command Line Application to demonstrate your understanding of JavaScrip
 
 
 The Command Line Application should interact with your teams selected API.  The API selected should support searching by keyword and getting detailed data for a specific item.
-
-    * The selected API should provide an endpoint which allows for searching by accepting a keyword/search term and returns a list of results associated to that keyword/search term.
-        * This endpoint most provides a query parameter for searching
-    * The selected API should provide an endpoint which allows for getting detailed data on a single item by some unique identifier.
-        * This endpoint most likely has a path parameter which requires a unique id
+<ul>
+    <li>The selected API should provide an endpoint which allows for searching by accepting a keyword/search term and returns a list of results associated to that keyword/search term.<li>
+   <ul><li>This endpoint most provides a query parameter for searching</ul></li>
+    <li>The selected API should provide an endpoint which allows for getting detailed data on a single item by some unique identifier.</li>
+   <ul><li>This endpoint most likely has a path parameter which requires a unique id</ul><li>
+</ul>
+ 
 
  
 
