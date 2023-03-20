@@ -8,7 +8,6 @@ Create a Command Line Application to demonstrate your understanding of JavaScrip
 
 
 The Command Line Application should interact with your teams selected API.  The API selected should support searching by keyword and getting detailed data for a specific item.
-
     - The selected API should provide an endpoint which allows for searching by accepting a keyword/search term and returns a list of results associated to that keyword/search term.
         - This endpoint most provides a query parameter for searching
     - The selected API should provide an endpoint which allows for getting detailed data on a single item by some unique identifier.
@@ -27,13 +26,11 @@ The application should save all keyword or search term to a local JSON file and 
 Create a Command Line Application similar to the examples in class.  The Command Line Application should have the following:
 
 **package.json**
-
     - The CLI should have a package.json file that is properly filled out.
     - It should include but not limited to (name, version, author, description, dependencies, etc)
 
  
 **cli.js**
-
     - Should contain the logic to handle the user interactions via the command line
     - The CLI app should display a help menu by typing: `node cli.js --help`
     - The CLI should accept user input that is a keyword (associated to the you API selected)
@@ -52,7 +49,6 @@ Create a Command Line Application similar to the examples in class.  The Command
 
 
 **app.js**
-
     - Should contain the logic for the application.
     - The app should perform a search using the keyword/search term passed in from the command line.
         - This invoke the function that allows for searching in `api.js`
@@ -68,7 +64,6 @@ Create a Command Line Application similar to the examples in class.  The Command
 
  
 **history.js**
-
     - This file must export a function that allows for saving all previous searches and the count of the results
     - This performs the save by writing/updating a JSON file locally
     - The saved dated should be in the form of an array of objects - where each object has the key search and the key resultCount
