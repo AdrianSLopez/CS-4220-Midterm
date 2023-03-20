@@ -1,0 +1,19 @@
+{
+  "name": "midterm_project",
+  "version": "1.0.0",
+  "description": "CS 4220 Midterm Project: Command Line Interface that interacts with an API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianSLopez/CS_4220_Midterm.git"
+  },
+  "author": "Adrian Salgado Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianSLopez/CS_4220_Midterm/issues"
+  },
+  "homepage": "https://github.com/AdrianSLopez/CS_4220_Midterm#readme"
+}
