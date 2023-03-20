@@ -2,16 +2,16 @@
 # Midterm Project
 DUE: Sunday 03/26/23 - 11:59PM
 
-----
+#
 
 Create a Command Line Application to demonstrate your understanding of JavaScript, Node.js by building a CLIs that interacts with an API.
 
 
 The Command Line Application should interact with your teams selected API.  The API selected should support searching by keyword and getting detailed data for a specific item.
-    - The selected API should provide an endpoint which allows for searching by accepting a keyword/search term and returns a list of results associated to that keyword/search term.
-        - This endpoint most provides a query parameter for searching
-    - The selected API should provide an endpoint which allows for getting detailed data on a single item by some unique identifier.
-        - This endpoint most likely has a path parameter which requires a unique id
+    * The selected API should provide an endpoint which allows for searching by accepting a keyword/search term and returns a list of results associated to that keyword/search term.
+        * This endpoint most provides a query parameter for searching
+    * The selected API should provide an endpoint which allows for getting detailed data on a single item by some unique identifier.
+        * This endpoint most likely has a path parameter which requires a unique id
 
  
 
@@ -21,7 +21,7 @@ Your app should then go back to the API again and perform a get/fetch by some un
 
 The application should save all **keyword or search term** to a local JSON file and the result count for that **keyword or search term**.
 
-----
+#
 
 ## CLI Project Requirements
 
