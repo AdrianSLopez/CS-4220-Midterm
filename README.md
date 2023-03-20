@@ -1,7 +1,6 @@
 
 # Midterm Project
 DUE: Sunday 03/26/23 - 11:59PM
-
 #
 
 Create a Command Line Application to demonstrate your understanding of JavaScript, Node.js by building a CLIs that interacts with an API.
@@ -24,7 +23,6 @@ Your app should then go back to the API again and perform a get/fetch by some un
 The application should save all **keyword or search term** to a local JSON file and the result count for that **keyword or search term**.
 
 #
-
 ## CLI Project Requirements
 
 Create a Command Line Application similar to the examples in class.  The Command Line Application should have the following:
