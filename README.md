@@ -45,7 +45,7 @@ Create a Command Line Application similar to the examples in class.  The Command
             <ul><li>`node cli.js search --<flag name> <keyword>`</ul></li>
             <ul><li>`node cli.js search <keyword>`</ul></li>
 
- 
+
 **api.js**
     <ul>
         <li>This file **_must_** export a function that allows for searching the selected API by keyword.</li>
@@ -56,22 +56,26 @@ Create a Command Line Application similar to the examples in class.  The Command
 
 
 **app.js**
-    - Should contain the logic for the application.
-    - The app should perform a search using the keyword/search term passed in from the command line.
-        - This invoke the function that allows for searching in `api.js`
-    - The app should display the search results list to the user.
-    - The app should prompt the user and allow the user to select one item from search results list (not type an input).
-    - The app should process the user's selection and get detailed data for the one item selected by using a unique identifier.
-        - This invoke the function that allows for getting by unique identifer in `api.js`
-    - The app should save the search history in a JSON file (
-        - This invoke the function that allows for saving to a local file in `hisotry.js`
-        - Refer to `history.js` for additional details
-    - The app should display the details in a clean and easy to read format. 
-        - The app should not print JavaScript object literals or JSON blobs.
+    <ul>
+        <li>Should contain the logic for the application.</li>
+        <li>The app should perform a search using the keyword/search term passed in from the command line.</li>
+            <ul><li>This invoke the function that allows for searching in `api.js`</li></ul>
+        <li>The app should display the search results list to the user.</li>
+        <li>The app should prompt the user and allow the user to select one item from search results list (not type an input).</li>
+        <li>The app should process the user's selection and get detailed data for the one item selected by using a unique identifier.</li>
+            <ul><li>This invoke the function that allows for getting by unique identifer in `api.js`</li></ul>
+        <li>The app should save the search history in a JSON file (</li>
+            <ul><li>This invoke the function that allows for saving to a local file in `hisotry.js`</li></ul>
+            <ul><li>Refer to `history.js` for additional details</li></ul>
+        <li>The app should display the details in a clean and easy to read format.</li>
+            <ul><li>The app should not print JavaScript object literals or JSON blobs.</li></ul>
+    </ul>
 
  
 **history.js**
-    - This file must export a function that allows for saving all previous searches and the count of the results
-    - This performs the save by writing/updating a JSON file locally
-    - The saved dated should be in the form of an array of objects - where each object has the key search and the key resultCount
-    - HINT: https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback 
+    <ul>
+        <li>This file must export a function that allows for saving all previous searches and the count of the results</li>
+        <li>This performs the save by writing/updating a JSON file locally</li>
+        <li>The saved dated should be in the form of an array of objects - where each object has the key search and the key resultCount</li>
+        <li>HINT: https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback </li>
+    </ul>
