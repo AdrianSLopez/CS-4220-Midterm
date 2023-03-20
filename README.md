@@ -42,8 +42,9 @@ Create a Command Line Application similar to the examples in class.  The Command
         <li>The CLI app should display a help menu by typing: `node cli.js --help`</li>
         <li>The CLI should accept user input that is a keyword (associated to the you API selected)</li>
         <li>The CLI should include a `search` command similar to one of these:</li>
-            <ul><li>`node cli.js search --<flag name> <keyword>`</ul></li>
-            <ul><li>`node cli.js search <keyword>`</ul></li>
+            <ul><li>`node cli.js search --<flag name> <keyword>`</li></ul>
+            <ul><li>`node cli.js search <keyword>`</li></ul>
+    </ul>
 
 
 **api.js**
