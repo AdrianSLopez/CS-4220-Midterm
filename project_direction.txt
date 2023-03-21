@@ -1,0 +1,18 @@
+Allow user to input the number of tracks they want to see.
+    Ex: 
+        Input: Get top 10 tracks
+Show the user inputted amount of tracks to the user.
+    Ex:
+        Output: [] 1. XXX by yyyy
+                [] 2. xsad by asde and asdasd
+                [] ...
+From the output the user is able to select a song to view more detailed information
+    Ex:
+        Output:
+                [if possible display track image]
+                XXX by yyyy
+                Track 2 in album T 
+                Released on date
+                Ranked #
+                #### streams           
+                [optional] snippet @ link
