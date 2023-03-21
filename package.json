@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AdrianSLopez/CS_4220_Midterm/issues"
   },
-  "homepage": "https://github.com/AdrianSLopez/CS_4220_Midterm#readme"
+  "homepage": "https://github.com/AdrianSLopez/CS_4220_Midterm#readme",
+  "dependencies": {
+    "yargs": "^17.7.1"
+  }
 }
