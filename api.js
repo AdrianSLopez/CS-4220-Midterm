@@ -24,11 +24,11 @@ const getTracks = async (name) => {
     }
 }
 
-const getTrackInfo = async (track) => {
+const getTrackInfo = async (id) => {
     const options = {
         method: 'GET',
         url: `${base}/tracks`,
-        params: {ids: `${track.id}`},
+        params: {ids: `${id}`},
         headers
     }
     
