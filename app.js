@@ -38,7 +38,7 @@ const _displayTracks = async (tracks) => {
     }]);
 };
 
-const get = async (trackName) => {
+const search = async (trackName) => {
     // api requests a list of 10 tracks based on user search
     const tracks = await api.getTracks(trackName);
 
@@ -59,11 +59,8 @@ const get = async (trackName) => {
     console.log('\t\x1b[32m%s\x1b[0m', filteredTrackInfo[0].albumInfo);
     console.log('\t\x1b[32m%s\x1b[0m', filteredTrackInfo[0].releaseDate);
     console.log('\t\x1b[32m%s\x1b[0m', filteredTrackInfo[0].time);
-
-    // TODO:
-        // (optional) implement [option] for user to choose the maximum amount of reccomendations
 }
 
 module.exports = {
-    get
+    search
 }

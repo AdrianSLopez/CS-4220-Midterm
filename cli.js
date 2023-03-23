@@ -12,6 +12,6 @@ yargs(process.argv.slice(2))
     }, 
     (args) => {
         const trackName = args.track.concat(" ".concat(process.argv.splice(4).join(" ")));
-        app.get(trackName);
+        app.search(trackName);
     })
     .help().argv;
