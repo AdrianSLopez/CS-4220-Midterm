@@ -18,12 +18,30 @@ const getTracks = async (name) => {
         // returns 7 potential tracks that user is searching for
         const tracks = await axios.request(options);
 
-        return tracks.data
+        return tracks.data.tracks
     } catch (error) {
         console.error(error);
     }
 }
 
+const getTrackInfo = async (track) => {
+    const options = {
+        method: 'GET',
+        url: `${base}/tracks`,
+        params: {ids: `${track.id}`},
+        headers
+    }
+    
+    try {
+        const trackInfo = await axios.request(options);
+
+        return trackInfo;
+    } catch (error) {
+        console.error(error)
+    }
+}
+
 module.exports = {
-    getTracks
+    getTracks,
+    getTrackInfo
 }
