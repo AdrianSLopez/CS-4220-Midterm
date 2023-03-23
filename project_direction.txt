@@ -1,12 +1,12 @@
 Allow user to search tracks by track name
     Ex: 
         Input: node cli.js search --track Moonlight
-Show the user inputted amount of tracks to the user.
+Display possible tracks based on user inputted track name
     Ex:
         Output: [] 1. XXX by yyyy
                 [] 2. xsad by asde and asdasd
                 [] ...
-From the output the user is able to select a song to view more detailed information
+From the output the user is able to select a track to view more detailed information
     Ex:
         Output:
                 [if possible display track image]
