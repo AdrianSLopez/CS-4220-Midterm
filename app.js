@@ -47,6 +47,7 @@ const get = async (trackName) => {
 
     // track chosen by user
     const chosenTrack = await _displayTracks(filteredRecTrackInfo);
+    
     // api requests more info based on chosen track.
     const trackInfo = await api.getTrackInfo(chosenTrack.tracks.id);
 

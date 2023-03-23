@@ -5,7 +5,7 @@ const headers = {
     'X-RapidAPI-Host': 'spotify81.p.rapidapi.com'
   };
 
-// get track reccommendation based on user input
+// get list of tracks related to user search input
 const getTracks = async (name) => {
     const options = {
       method: 'GET',
@@ -24,6 +24,7 @@ const getTracks = async (name) => {
     }
 }
 
+// get info for specific track
 const getTrackInfo = async (id) => {
     const options = {
         method: 'GET',
