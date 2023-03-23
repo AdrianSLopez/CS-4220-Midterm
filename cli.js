@@ -3,10 +3,10 @@ const app = require('./app.js');
 
 yargs(process.argv.slice(2))
     .usage('$0: Usage <command>')
-    .command('search <track>', 'search for track/song',
+    .command('search <track>', 'search for track/song based on name',
     (yargs) => {
         return (yargs.positional('track', {
-            describe: 'the track to search for',
+            describe: 'the track/song to search for',
             type: 'string'            
         }));
     }, 
