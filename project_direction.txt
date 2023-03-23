@@ -1,6 +1,6 @@
-Allow user to input the number of tracks they want to see.
+Allow user to search tracks by track name
     Ex: 
-        Input: Get top 10 tracks
+        Input: node cli.js search --track Moonlight
 Show the user inputted amount of tracks to the user.
     Ex:
         Output: [] 1. XXX by yyyy
@@ -14,5 +14,5 @@ From the output the user is able to select a song to view more detailed informat
                 Track 2 in album T 
                 Released on date
                 Ranked #
-                #### streams           
+                [optional] #### streams           
                 [optional] snippet @ link
