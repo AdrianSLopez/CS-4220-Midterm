@@ -1,8 +1,8 @@
 const axios = require("axios");
 const base = 'https://spotify81.p.rapidapi.com';
 const headers = {
-    'X-RapidAPI-Key': '21db31a7camsh2254351ad0b2dcfp1130e0jsn294348c23b20',
-    'X-RapidAPI-Host': 'spotify81.p.rapidapi.com'
+    'X-RapidAPI-Key': '',
+    'X-RapidAPI-Host': ''
   };
 
 // get list of tracks related to user search input
