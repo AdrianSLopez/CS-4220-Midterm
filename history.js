@@ -1,5 +1,6 @@
 const fs = require('fs/promises');
 
+// Save user searches to local file: history.json
 const saveSearch = async (search) => {
 
     await fs.readFile('history.json')

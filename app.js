@@ -15,7 +15,7 @@ const _filterRecTrackInfo = (tracks) => {
     });
 };
 
-// filter chosen track's info
+// filter chosen track's information
 const _filterTrackInfo = (track) => {
     return track.map((trackInfo) => {
         const albumInfo = `Track ${trackInfo.track_number} from album titled ${trackInfo.album.name}`;
