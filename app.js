@@ -1,5 +1,6 @@
 const prompts = require('prompts')
 const api = require('./api.js');
+const { saveSearch } = require('./history.js');
 
 // filter data for each recommended track
 const _filterRecTrackInfo = (tracks) => {
@@ -19,7 +20,7 @@ const _filterTrackInfo = (track) => {
     return track.map((trackInfo) => {
         const albumInfo = `Track ${trackInfo.track_number} from album titled ${trackInfo.album.name}`;
         const releaseDate = `Released in ${trackInfo.album.release_date}`
-        const time = `${((trackInfo.duration_ms)/60000).toFixed(2)} minutes long`
+        const time = `${((trackInfo.duration_ms)/60000).toFixed(2)} minutes`
         return {albumInfo, releaseDate, time: time.replace('.', ':')};
     });
 };
@@ -39,12 +40,10 @@ const _displayTracks = async (tracks) => {
 };
 
 const search = async (trackName) => {
-    // Todo:
-        // Invoke function from history.js
-            // Note: function should store user search and result count
-
     // api requests a list of 10 tracks based on user search
     const tracks = await api.getTracks(trackName);
+
+    await saveSearch(trackName);
 
     // filters info for every recommended track
     const filteredRecTrackInfo = _filterRecTrackInfo(tracks);
