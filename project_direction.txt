@@ -1,18 +1,16 @@
 Allow user to search tracks by track name
     Ex: 
-        Input: node cli.js search --track Moonlight
+        Input: node cli.js search Moonlight --Limit 5
 Display possible tracks based on user inputted track name
     Ex:
         Output: [] 1. XXX by yyyy
                 [] 2. xsad by asde and asdasd
                 [] ...
+Save user search and result count to local json file.
 From the output the user is able to select a track to view more detailed information
     Ex:
         Output:
-                [if possible display track image]
                 XXX by yyyy
                 Track 2 in album T 
-                Released on date
-                Ranked #
-                [optional] #### streams           
-                [optional] snippet @ link
+                Released in date
+                x:xx minutes
