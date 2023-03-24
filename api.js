@@ -15,14 +15,14 @@ const getTracks = async (name) => {
     };
     
     try {
-        // returns 7 potential tracks that user is searching for
+        // returns 10 potential tracks that user is searching for
         const tracks = await axios.request(options);
 
         return tracks.data.tracks
     } catch (error) {
         console.error(error);
     }
-}
+};
 
 // get info for specific track
 const getTrackInfo = async (id) => {
@@ -40,9 +40,9 @@ const getTrackInfo = async (id) => {
     } catch (error) {
         console.error(error)
     }
-}
+};
 
 module.exports = {
     getTracks,
     getTrackInfo
-}
+};
