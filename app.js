@@ -39,16 +39,20 @@ const _displayTracks = async (tracks) => {
 };
 
 const search = async (trackName) => {
+    // Todo:
+        // Invoke function from history.js
+            // Note: function should store user search and result count
+
     // api requests a list of 10 tracks based on user search
     const tracks = await api.getTracks(trackName);
 
     // filters info for every recommended track
     const filteredRecTrackInfo = _filterRecTrackInfo(tracks);
 
-    // track chosen by user
+    // Display list of tracks related to user search
     const chosenTrack = await _displayTracks(filteredRecTrackInfo);
     
-    // api requests more info based on chosen track.
+    // api requests more info based on track chosen by user
     const trackInfo = await api.getTrackInfo(chosenTrack.tracks.id);
 
     // filter chosen track info
