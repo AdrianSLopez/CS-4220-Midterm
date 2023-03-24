@@ -43,6 +43,7 @@ const search = async (trackName) => {
     // api requests a list of 10 tracks based on user search
     const tracks = await api.getTracks(trackName);
 
+    // save user searches
     await saveSearch(trackName);
 
     // filters info for every recommended track
