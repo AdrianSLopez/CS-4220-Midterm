@@ -39,12 +39,12 @@ const _displayTracks = async (tracks) => {
     }]);
 };
 
-const search = async (trackName) => {
-    // api requests a list of 10 tracks based on user search
-    const tracks = await api.getTracks(trackName);
-
-    // save user searches
-    await saveSearch(trackName);
+const search = async (trackName, resultLimit) => {
+    // api requests a list of tracks based on user search and resultLimit
+    const tracks = await api.getTracks(trackName, resultLimit);
+    
+    // save user searches and number of results returned by api request
+    await saveSearch(trackName, tracks.length);
 
     // filters info for every recommended track
     const filteredRecTrackInfo = _filterRecTrackInfo(tracks);

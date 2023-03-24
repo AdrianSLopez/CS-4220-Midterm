@@ -6,16 +6,16 @@ const headers = {
   };
 
 // get list of tracks related to user search input
-const getTracks = async (name) => {
+const getTracks = async (name, resultLimit) => {
     const options = {
       method: 'GET',
       url: `${base}/search`,
-      params: {q:`${name}`, type: 'tracks', limit: '10'},
+      params: {q:`${name}`, type: 'tracks', limit: `${resultLimit}`},
       headers
     };
     
     try {
-        // returns 10 potential tracks that user is searching for
+        // returns potential tracks that user is searching for
         const tracks = await axios.request(options);
 
         return tracks.data.tracks
