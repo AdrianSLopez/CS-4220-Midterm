@@ -1,11 +1,21 @@
-// TODO:
-    //Create function to store all searches and count of results
-        // to a local JSON file
+const fs = require('fs/promises');
 
-    // Array of Objects
-        // Object
-            // [{search: "Blue boy", resultCount: "10"}]
-    // Hint: 
-        // https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback
+const saveSearch = async (search) => {
 
-    // Export function to be used in app.js
+    await fs.readFile('history.json')
+    .then((data) => {
+        const obj = JSON.parse(data);
+
+        obj.push({ search, resultCount: 10 });
+
+        fs.writeFile('history.json', JSON.stringify(obj));
+    })
+    .catch((error) => {
+        fs.writeFile('history.json', JSON.stringify( [{search, resultCount: 10 }]));
+    })
+
+};
+
+module.exports = {
+    saveSearch
+};
